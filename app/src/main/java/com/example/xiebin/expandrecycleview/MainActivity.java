@@ -96,7 +96,6 @@ public class MainActivity extends AppCompatActivity implements HomeCategoriesAda
             if (inputStream == null) {
                 return null;
             }
-
             BufferedInputStream bis = null;
             int length;
             try {
