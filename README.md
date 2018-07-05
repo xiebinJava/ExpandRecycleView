@@ -14,3 +14,6 @@ Expand RecycleView 是单个RecycleView 来实现 ExpandableListView 的效果�
 
 这是我再做项目的时候，从服务器获取的数据。这个数据，我们再做的时候需要进一步处理。
 
+
+![cony_ops](https://github.com/xiebinJava/ExpandRecycleView/blob/master/XFORN~H84XUY7EMUKQG61FM.png?raw=true)
+
