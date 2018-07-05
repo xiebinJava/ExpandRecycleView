@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity implements HomeCategoriesAda
         categories = myDataBean.getData().getCategories();
         if (subCategoriesBeansListShow.size() == 0) {
             int size = categories.size();
-
             //1：遍历大集合 categories (下面叫一级分类)  SubCategories（下面叫二级分类）
             for (int i = 0; i < size; i++) {
                 MyDataBean.DataBean.CategoriesBean categoriesBean = categories.get(i);
@@ -73,13 +72,15 @@ public class MainActivity extends AppCompatActivity implements HomeCategoriesAda
             homeCategoriesAdapter = new HomeCategoriesAdapter(this, categories, subCategoriesBeansListShow, this);
         }
         rvExpand.setAdapter(homeCategoriesAdapter);
-        //以下是对布局进行控制
+        //以下是对布局进行控制，3表示3个条目做为一行
         final GridLayoutManager manager = new GridLayoutManager(this, 3);
         manager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
             @Override
             public int getSpanSize(int position) {
+                //如果条目的 type 是 1 ， 那么这个条目就占3个位置。也就是一行
                 if (homeCategoriesAdapter.getItemViewType(position) == 1) {
                     return 3;
+                    //如果条目的 type 是 2 ， 那么这个条目就占3个位置。也就是一行
                 } else if (homeCategoriesAdapter.getItemViewType(position) == 2) {
                     return 3;
                 } else {
