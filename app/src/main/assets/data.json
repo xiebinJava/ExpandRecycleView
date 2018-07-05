@@ -1,0 +1,200 @@
+{
+  "Code": 200,
+  "data": {
+    "categories": [
+      {
+        "banner_image": "",
+        "introduce": "bbbbbbbb",
+        "name": "aaaaaaa",
+        "sub_categories": [
+          {
+            "id": "6",
+            "image": "",
+            "name": "product1"
+          },
+          {
+            "id": "894",
+            "image": "",
+            "name": "product2"
+          },
+          {
+            "id": "1023",
+            "image": "",
+            "name": "product3"
+          },
+          {
+            "id": "1017",
+            "image": "",
+            "name": "product4"
+          },
+          {
+            "id": "1334",
+            "image": "",
+            "name": "product5"
+          },
+          {
+            "id": "999",
+            "image": "",
+            "name": "product6"
+          },
+          {
+            "id": "1105",
+            "image": "",
+            "name": "product7"
+          },
+          {
+            "id": "1080",
+            "image": "",
+            "name": "product8"
+          }
+        ]
+      },
+      {
+        "banner_image": "",
+        "introduce": "bbbbbbbb",
+        "name": "aaaaaaa",
+        "sub_categories": [
+          {
+            "id": "6",
+            "image": "",
+            "name": "product1"
+          },
+          {
+            "id": "894",
+            "image": "",
+            "name": "product2"
+          },
+          {
+            "id": "1023",
+            "image": "",
+            "name": "product3"
+          },
+          {
+            "id": "1017",
+            "image": "",
+            "name": "product4"
+          },
+          {
+            "id": "1334",
+            "image": "",
+            "name": "product5"
+          },
+          {
+            "id": "999",
+            "image": "",
+            "name": "product6"
+          },
+          {
+            "id": "1105",
+            "image": "",
+            "name": "product7"
+          },
+          {
+            "id": "1080",
+            "image": "",
+            "name": "product8"
+          }
+        ]
+      },
+      {
+        "banner_image": "",
+        "introduce": "bbbbbbbb",
+        "name": "aaaaaaa",
+        "sub_categories": [
+          {
+            "id": "6",
+            "image": "",
+            "name": "product1"
+          },
+          {
+            "id": "894",
+            "image": "",
+            "name": "product2"
+          },
+          {
+            "id": "1023",
+            "image": "",
+            "name": "product3"
+          },
+          {
+            "id": "1017",
+            "image": "",
+            "name": "product4"
+          },
+          {
+            "id": "1334",
+            "image": "",
+            "name": "product5"
+          },
+          {
+            "id": "999",
+            "image": "",
+            "name": "product6"
+          },
+          {
+            "id": "1105",
+            "image": "",
+            "name": "product7"
+          },
+          {
+            "id": "1080",
+            "image": "",
+            "name": "product8"
+          }
+        ]
+      },
+      {
+        "banner_image": "",
+        "introduce": "bbbbbbbb",
+        "name": "aaaaaaa",
+        "sub_categories": [
+          {
+            "id": "6",
+            "image": "",
+            "name": "product1"
+          },
+          {
+            "id": "894",
+            "image": "",
+            "name": "product2"
+          },
+          {
+            "id": "1023",
+            "image": "",
+            "name": "product3"
+          },
+          {
+            "id": "1017",
+            "image": "",
+            "name": "product4"
+          },
+          {
+            "id": "1334",
+            "image": "",
+            "name": "product5"
+          },
+          {
+            "id": "999",
+            "image": "",
+            "name": "product6"
+          },
+          {
+            "id": "1105",
+            "image": "",
+            "name": "product7"
+          },
+          {
+            "id": "1080",
+            "image": "",
+            "name": "product8"
+          }
+        ]
+      }
+    ],
+    "msg": "",
+    "result": "success",
+    "total_items": 0
+  },
+  "msg": "",
+  "result": "success"
+}
