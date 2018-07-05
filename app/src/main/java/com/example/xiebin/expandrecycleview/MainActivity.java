@@ -51,19 +51,22 @@ public class MainActivity extends AppCompatActivity implements HomeCategoriesAda
         categories = myDataBean.getData().getCategories();
         if (subCategoriesBeansListShow.size() == 0) {
             int size = categories.size();
+
+            //1：遍历大集合 categories (下面叫一级分类)  SubCategories（下面叫二级分类）
             for (int i = 0; i < size; i++) {
                 MyDataBean.DataBean.CategoriesBean categoriesBean = categories.get(i);
-                //先把每一个数据都放到一个大集合里面
+                //2：创建二级分类对象，把一级分类的数据（name:aaaaaaa）放到二级分类对象中，并设置title为true
                 MyDataBean.DataBean.CategoriesBean.SubCategoriesBean subCategoriesBean = new MyDataBean.DataBean.CategoriesBean.SubCategoriesBean();
                 subCategoriesBean.setName(categoriesBean.getName());
                 subCategoriesBean.setTitle(true);
                 subCategoriesBean.setTitleOldListPos(i);
-
+                //3:创建二级分类对象，把一级分类的数据（introduce:bbbbbbb）放到二级分类对象中,并设置子View 的title为true
                 MyDataBean.DataBean.CategoriesBean.SubCategoriesBean subCategoriesBean2 = new MyDataBean.DataBean.CategoriesBean.SubCategoriesBean();
                 subCategoriesBean2.setName(categoriesBean.getIntroduce());
                 subCategoriesBean2.setChildTitle(true);
-
+                //4:把子View 的title 放到二级分类第一个
                 categoriesBean.getSub_categories().add(0, subCategoriesBean2);
+                //5：创建一个三级分类集合，放入我们创建的第一个二级分类对象
                 subCategoriesBeansListShow.add(subCategoriesBean);
             }
             rvExpand.setLayoutManager(new LinearLayoutManager(this));
