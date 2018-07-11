@@ -94,7 +94,7 @@ public class HomeCategoriesAdapter extends RecyclerView.Adapter {
         } else {
             ViewHolder1 itemSectionHolder = (ViewHolder1) holder;
             itemSectionHolder.allcategoreGrideviewTextone.setTag(position);
-            int size = categories.get(titleOldListPos).getSub_categories().size();
+            int size = categories.get(titleOldListPos).getSub_categories().size()-1;
             if (size % 3 == 0) {
                 pos = size / 3;
             } else {
