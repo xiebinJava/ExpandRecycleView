@@ -94,10 +94,13 @@ public class HomeCategoriesAdapter extends RecyclerView.Adapter {
         } else {
             ViewHolder1 itemSectionHolder = (ViewHolder1) holder;
             itemSectionHolder.allcategoreGrideviewTextone.setTag(position);
+            //计算出横向排列的数据的大小 size (减1是减掉type = 2的情况)
             int size = categories.get(titleOldListPos).getSub_categories().size()-1;
+            //每行是3个 就 %3  如果等于0   结果就是行数，
             if (size % 3 == 0) {
                 pos = size / 3;
             } else {
+                //如果不等于0  先将结果转为int 然后加一
                 pos = size / 3 + 1;
             }
             //postion - 3*行数 = 2+titleOldListPos  如果等式成立表示第一列
